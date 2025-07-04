@@ -1,0 +1,36 @@
+/* Config */
+@import url("./config/colors.css");
+@import url("./config/fonts.css");
+
+/* Components */
+@import url("./components/header.css");
+@import url("./components/footer.css");
+@import url("./components/terminal.css");
+
+/* Base */
+body {
+  background-color: var(--black);
+  background-image: radial-gradient(ellipse at top, #1a1a2e, var(--black) 80%);
+  color: var(--white);
+  min-height: 100vh;
+  padding: 8px; /* For the glowing border */
+  position: relative;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 8px; /* Match the padding */
+    border: 2px solid transparent;
+    background: linear-gradient(175deg, #F85044, #3F5EFB) border-box;
+    -webkit-mask:
+        linear-gradient(#fff 0 0) padding-box,
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: destination-out;
+    mask-composite: exclude;
+    pointer-events: none;
+}

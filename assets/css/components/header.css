@@ -1,0 +1,15 @@
+header {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+header .text-red-500 {
+    color: var(--red);
+}
+
+header a.bg-red-500 {
+    background-color: var(--red);
+}
+
+header a.bg-red-500:hover {
+    background-color: #CC2222; /* A darker red for hover */
+}
