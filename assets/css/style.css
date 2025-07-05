@@ -1,36 +1,42 @@
-/* Config */
-@import url("./config/colors.css");
-@import url("./config/fonts.css");
+@import url("config/colors.css");
+@import url("config/fonts.css");
 
-/* Components */
-@import url("./components/header.css");
-@import url("./components/footer.css");
-@import url("./components/terminal.css");
-
-/* Base */
+/* Base Styles */
 body {
-  background-color: var(--black);
-  background-image: radial-gradient(ellipse at top, #1a1a2e, var(--black) 80%);
-  color: var(--white);
-  min-height: 100vh;
-  padding: 8px; /* For the glowing border */
+  background-color: var(--secondary);
+  color: var(--text-primary);
+  font-family: var(--font-sans);
   position: relative;
+  overflow-x: hidden;
+
+  /* Arrière-plan étoilé subtil */
+  background-image:
+    radial-gradient(white, rgba(255,255,255,0.2) 2px, transparent 40px),
+    radial-gradient(white, rgba(255,255,255,0.15) 1px, transparent 30px),
+    radial-gradient(white, rgba(255,255,255,0.1) 2px, transparent 40px),
+    radial-gradient(rgba(255,255,255,0.4), rgba(255,255,255,0.1) 2px, transparent 30px);
+  background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
+  background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
 }
 
+/* Effet de bordure brillante */
 body::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    border-radius: 8px; /* Match the padding */
-    border: 2px solid transparent;
-    background: linear-gradient(175deg, #F85044, #3F5EFB) border-box;
-    -webkit-mask:
-        linear-gradient(#fff 0 0) padding-box,
-        linear-gradient(#fff 0 0);
-    -webkit-mask-composite: destination-out;
-    mask-composite: exclude;
-    pointer-events: none;
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  pointer-events: none;
+  background: radial-gradient(ellipse at center, rgba(239, 68, 68, 0.4) 0%, rgba(239, 68, 68, 0) 70%),
+              radial-gradient(ellipse at bottom left, rgba(245, 158, 11, 0.5) 0%, rgba(245, 158, 11, 0) 60%),
+              radial-gradient(ellipse at top right, rgba(239, 68, 68, 0.5) 0%, rgba(245, 158, 11, 0) 60%);
+
+  margin: -20px; /* Ajuste la taille du flou */
+  filter: blur(60px); /* Applique un flou important pour l'effet de lueur */
+}
+
+.container {
+  /* Existing code */
 }

@@ -1,6 +1,6 @@
-# Strike Force MVP - Development Roadmap
+# Launchpad MVP - Development Roadmap
 
-This document outlines the plan for building the Strike Force MVP website, using the existing `landing-page` as inspiration for the technical setup. The content will be based on the final version `copy-target-v5-full.md`.
+This document outlines the plan for building the Launchpad MVP website, using the existing `landing-page` as inspiration for the technical setup. The content will be based on the final version `copy-target-v5-full.md`.
 
 ## Phase 1: Project Setup & Foundation
 - [x] **Task 1.1:** Create the project directory structure: `assets/css`, `assets/js`, `assets/images`.
@@ -38,7 +38,14 @@ This document outlines the plan for building the Strike Force MVP website, using
     - [x] Contact Form
     - [x] Alternate contact methods (Phone, Email, Calendly)
 
-## Phase 4: Finalization
-- [ ] **Task 4.1:** Review and test for responsiveness across devices.
-- [ ] **Task 4.2:** Final code cleanup and optimization.
-- [ ] **Task 4.3:** Prepare for deployment.
+## Phase 4: High-Fidelity Styling & Content
+- [x] **Task 4.1:** Update global styles (colors, fonts) to match the final branding.
+- [x] **Task 4.2:** Implement high-fidelity styling for the **Homepage** and update its content.
+- [x] **Task 4.3:** Implement high-fidelity styling for the **Process Page** and update its content.
+- [x] **Task 4.4:** Implement high-fidelity styling for the **Team Page** and update its content.
+- [x] **Task 4.5:** Implement high-fidelity styling for the **Contact Page** and update its content.
+
+## Phase 5: Finalization
+- [ ] **Task 5.1:** Review and test for responsiveness across devices.
+- [ ] **Task 5.2:** Final code cleanup and optimization.
+- [ ] **Task 5.3:** Prepare for deployment.

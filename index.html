@@ -3,264 +3,642 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Strike Force MVP - Accueil</title>
+    <title>Launchpad by stellaire.studio</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body class="bg-black text-white">
-    <header class="container mx-auto px-4 py-6 flex justify-between items-center">
-        <div class="text-2xl font-bold">
-            <span class="text-red-500">🚀</span> Launchpad
+<body>
+    <header class="container mx-auto px-4 py-8 flex justify-between items-center">
+        <div class="flex flex-col items-start gap-y-0.5">
+          <a href="/" class="text-2xl font-bold text-white">
+              LAUNCHPAD
+          </a>
+          <a href="https://www.stellaire.studio" target="_blank" class="text-sm font-bold text-white">
+            stellaire.studio
+          </a>
         </div>
-        <nav class="hidden md:flex items-center space-x-8">
-            <a href="process.html" class="hover:text-red-500">PROCESS</a>
-            <a href="team.html" class="hover:text-red-500">ÉQUIPE</a>
-            <a href="contact.html" class="hover:text-red-500">CONTACT</a>
+        <nav class="hidden md:flex items-center space-x-10">
+            <a href="process.html" class="text-white hover:underline underline-offset-8 text-sm">process</a>
+            <a href="team.html" class="text-white hover:underline underline-offset-8 text-sm">équipe</a>
+            <a href="contact.html" class="text-white hover:underline underline-offset-8 text-sm">contact</a>
         </nav>
         <div class="hidden md:flex items-center space-x-4">
-            <a href="tel:+33183646972" class="hover:text-red-500">+33 1 83 64 69 72</a>
-            <a href="contact.html" class="bg-red-500 text-white px-6 py-2 rounded-full font-bold hover:bg-red-600">LAUNCH NOW</a>
+            <a href="contact.html" class="bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 px-5 rounded-sm uppercase text-sm tracking-wider">LAUNCH NOW</a>
         </div>
         <div class="md:hidden">
-            <button class="text-white focus:outline-none">
+            <button class="text-white">
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
             </button>
         </div>
     </header>
     <main class="container mx-auto px-4">
-        <section class="hero-section text-center py-24">
-            <h1 class="text-5xl md:text-7xl font-bold leading-tight">
-                GET RESULTS<br>OR GET LEFT BEHIND
-            </h1>
-            <p class="mt-8 text-xl max-w-2xl mx-auto">
-                Pendant que vos concurrents organisent des réunions, nous explorons votre marché et validons votre produit avec de vrais utilisateurs.
-            </p>
-            <div class="mt-12">
-                <a href="contact.html" class="bg-red-500 text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-red-600">LAUNCH NOW</a>
+        <!-- Section Hero -->
+        <section class="py-24 text-center">
+            <div class="max-w-4xl mx-auto">
+                <h1 class="text-5xl font-bold text-white leading-tight max-w-2xl mx-auto">C'est <span class="text-orange-500 font-bold">toujours</span> le marché qui tranche.</h1>
+                <p class="text-lg text-white mt-6 max-w-3xl mx-auto">Plutôt que de vous faire brûler du cash dans une idée sans avenir commercial,<br>nous explorons & validons avec vous son potentiel en confrontation au marché avec de vrais clients.</p>
+                <div class="mt-12">
+                    <a href="contact.html" class="bg-orange-500 hover:bg-orange-600 text-white font-bold py-4 px-8 rounded-sm uppercase text-base tracking-wider">LAUNCH NOW</a>
+                </div>
             </div>
         </section>
 
-        <div class="bg-gray-900/50 border border-gray-700 rounded-lg p-4 font-mono text-sm text-green-400 max-w-2xl mx-auto">
-            <div class="flex items-center space-x-2 mb-4">
-                <span class="w-3 h-3 bg-red-500 rounded-full"></span>
-                <span class="w-3 h-3 bg-yellow-500 rounded-full"></span>
-                <span class="w-3 h-3 bg-green-500 rounded-full"></span>
+        <!-- Terminal Section -->
+        <section class="pb-24">
+            <div class="max-w-4xl mx-auto">
+                <div class="bg-gray-900/50 border border-gray-700/50 rounded-lg shadow-lg">
+                    <div class="flex items-center px-4 py-3 border-b border-gray-700/50">
+                        <div class="flex space-x-2">
+                            <span class="w-3 h-3 bg-red-500 rounded-full"></span>
+                            <span class="w-3 h-3 bg-yellow-500 rounded-full"></span>
+                            <span class="w-3 h-3 bg-green-500 rounded-full"></span>
+                        </div>
+                    </div>
+                    <div class="p-6 font-mono text-sm text-left text-gray-300">
+                        <p>$ ./launchpad --init</p>
+                        <p class="mt-2">Initializing market exploration...</p>
+                        <p class="mt-2 text-white">> Scanning opportunity landscape... <span class="text-green-400">✓</span></p>
+                        <p class="mt-2 text-white">> Assembling expert crew... <span class="text-green-400">✓</span></p>
+                        <p class="mt-2 text-white">> Loading proven navigation systems... <span class="text-green-400">✓</span></p>
+                        <p class="mt-4">Ready to launch in 8 weeks.</p>
+                        <p class="mt-2"><span class="animate-pulse">_</span></p>
+                    </div>
+                </div>
             </div>
-            <p>$ ./strike-force --init</p>
-            <p>Initializing market exploration...</p>
-            <p class="text-white">> Scanning opportunity landscape... ✓</p>
-            <p class="text-white">> Assembling expert crew... ✓</p>
-            <p class="text-white">> Loading proven navigation systems... ✓</p>
-            <p>Ready to launch in 6 weeks.</p>
-            <p class="blinking-cursor">$_</p>
+        </section>
+
+        <!-- Section Statistiques -->
+        <section class="py-24">
+            <h2 class="text-4xl font-bold text-white text-center mb-16">Succès de nos missions</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center mx-auto">
+                <div>
+                    <p class="text-7xl font-bold text-white">N</p>
+                    <p class="text-white uppercase tracking-wider mt-2 text-sm uppercase">startups lancées</p>
+                </div>
+                <div>
+                    <p class="text-7xl font-bold text-white">N%</p>
+                    <p class="text-white uppercase tracking-wider mt-2 text-sm uppercase">market fit</p>
+                </div>
+                <div>
+                    <p class="text-7xl font-bold text-white">€NM</p>
+                    <p class="text-white uppercase tracking-wider mt-2 text-sm uppercase">levés post-validation</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Diagnostic -->
+        <section class="py-24" id="diagnostic">
+            <h2 class="text-4xl font-bold text-white text-center leading-tight max-w-3xl mx-auto">Votre idée a du potentiel.<br>Votre méthode, beaucoup moins.</h2>
+            <p class="text-lg text-white mt-6 text-center max-w-2xl mx-auto">6 mois pour faire une preuve de marché ? <br> Vos concurrents vous ont déjà dépassés, et ont commencé à conquérir votre marché.</p>
+            <div id="error-grid" class="grid md:grid-cols-3 gap-4 mt-16">
+                <div class="error-card border border-gray-700/50 rounded-lg p-6 flex flex-col bg-gray-900/30">
+                    <div class="flex justify-between items-center">
+                        <p class="font-mono text-orange-500 text-sm">ERROR_001</p>
+                        <span class="flex items-center leading-none bg-blue-900/50 text-blue-300 text-xs font-semibold px-2.5 py-1 rounded-full uppercase font-mono">Tech</span>
+                    </div>
+                    <p class="text-white font-bold mt-3">Obsession technologique</p>
+                    <p class="text-white mt-2 text-sm">Trois mois à débattre entre React et Vue, zéro minute à parler aux clients. La technologie parfaite qui ne résout aucun problème réel reste inutile.</p>
+                </div>
+                <div class="error-card border border-gray-700/50 rounded-lg p-6 flex flex-col bg-gray-900/30">
+                    <div class="flex justify-between items-center">
+                        <p class="font-mono text-orange-500 text-sm">ERROR_002</p>
+                        <span class="flex items-center leading-none bg-blue-900/50 text-blue-300 text-xs font-semibold px-2.5 py-1 rounded-full uppercase font-mono">Tech</span>
+                    </div>
+                    <p class="text-white font-bold mt-3">Complexité prématurée</p>
+                    <p class="text-white mt-2 text-sm">Architecture micro-services pour 10 utilisateurs. Nous construisons pour aujourd'hui, nous évoluons pour demain.</p>
+                </div>
+                <div class="error-card border border-gray-700/50 rounded-lg p-6 flex flex-col bg-gray-900/30">
+                    <div class="flex justify-between items-center">
+                        <p class="font-mono text-orange-500 text-sm">ERROR_003</p>
+                        <span class="flex items-center leading-none bg-blue-900/50 text-blue-300 text-xs font-semibold px-2.5 py-1 rounded-full uppercase font-mono">Tech</span>
+                    </div>
+                    <p class="text-white font-bold mt-3">Optimisation prématurée</p>
+                    <p class="text-white mt-2 text-sm">Optimiser les performances avant d'avoir des utilisateurs. Nous optimisons quand c'est nécessaire, pas par anticipation.</p>
+                </div>
+
+                <div class="error-card border border-gray-700/50 rounded-lg p-6 flex-col bg-gray-900/30">
+                    <div class="flex justify-between items-center">
+                        <p class="font-mono text-orange-500 text-sm">ERROR_004</p>
+                        <span class="flex items-center leading-none bg-blue-900/50 text-blue-300 text-xs font-semibold px-2.5 py-1 rounded-full uppercase font-mono">Tech</span>
+                    </div>
+                    <p class="text-white font-bold mt-3">Syndrome du stealth mode technique</p>
+                    <p class="text-white mt-2 text-sm">Six mois en mode secret à "perfectionner" le code avant de montrer quoi que ce soit. Pendant ce temps, quelqu'un d'autre lance et apprend.</p>
+                </div>
+                <div class="error-card border border-gray-700/50 rounded-lg p-6 flex-col bg-gray-900/30">
+                    <div class="flex justify-between items-center">
+                        <p class="font-mono text-orange-500 text-sm">ERROR_005</p>
+                        <span class="flex items-center leading-none bg-blue-900/50 text-blue-300 text-xs font-semibold px-2.5 py-1 rounded-full uppercase font-mono">Tech</span>
+                    </div>
+                    <p class="text-white font-bold mt-3">Paralysie par formation tech</p>
+                    <p class="text-white mt-2 text-sm">"Il faut d'abord que j'apprenne React/Python/DevOps." Nous apprenons en faisant, pas en théorie.</p>
+                </div>
+                <div class="error-card border border-gray-700/50 rounded-lg p-6 flex-col bg-gray-900/30">
+                    <div class="flex justify-between items-center">
+                        <p class="font-mono text-orange-500 text-sm">ERROR_006</p>
+                        <span class="flex items-center leading-none bg-blue-900/50 text-blue-300 text-xs font-semibold px-2.5 py-1 rounded-full uppercase font-mono">Tech</span>
+                    </div>
+                    <p class="text-white font-bold mt-3">Perfectionnisme du code</p>
+                    <p class="text-white mt-2 text-sm">Refactoriser 15 fois avant le premier utilisateur. Nous écrivons du code qui fonctionne, nous l'améliorons quand nécessaire.</p>
+                </div>
+
+                <div class="error-card border border-gray-700/50 rounded-lg p-6 flex flex-col bg-gray-900/30 hidden">
+                  <div class="flex justify-between items-center">
+                      <p class="font-mono text-orange-500 text-sm">ERROR_007</p>
+                      <span class="flex items-center bg-green-900/50 text-green-300 text-xs font-semibold px-2.5 py-1 rounded-full uppercase font-mono">Product</span>
+                  </div>
+                  <p class="text-white font-bold mt-3">Feature creep fatal</p>
+                  <p class="text-white mt-2 text-sm">Votre MVP compte 47 fonctionnalités "indispensables". Un vrai MVP fait une chose, mais la fait bien.</p>
+              </div>
+                <div class="error-card border border-gray-700/50 rounded-lg p-6 flex-col bg-gray-900/30 hidden">
+                    <div class="flex justify-between items-center">
+                        <p class="font-mono text-orange-500 text-sm">ERROR_008</p>
+                        <span class="flex items-center bg-green-900/50 text-green-300 text-xs font-semibold px-2.5 py-1 rounded-full uppercase font-mono">Product</span>
+                    </div>
+                    <p class="text-white font-bold mt-3">Perfectionnisme du design</p>
+                    <p class="text-white mt-2 text-sm">Refaire l'interface 15 fois avant de la montrer à un utilisateur. Nous testons tôt, nous itérons vite.</p>
+                </div>
+                <div class="error-card border border-gray-700/50 rounded-lg p-6 flex-col bg-gray-900/30 hidden">
+                    <div class="flex justify-between items-center">
+                        <p class="font-mono text-orange-500 text-sm">ERROR_009</p>
+                        <span class="flex items-center bg-green-900/50 text-green-300 text-xs font-semibold px-2.5 py-1 rounded-full uppercase font-mono">Product</span>
+                    </div>
+                    <p class="text-white font-bold mt-3">Syndrome du faux consensus</p>
+                    <p class="text-white mt-2 text-sm">"Toute l'équipe adore l'idée, donc le marché va adorer." Votre équipe n'est pas votre marché. Nous testons avec de vrais prospects.</p>
+                </div>
+                <div class="error-card border border-gray-700/50 rounded-lg p-6 flex-col bg-gray-900/30 hidden">
+                    <div class="flex justify-between items-center">
+                        <p class="font-mono text-orange-500 text-sm">ERROR_010</p>
+                        <span class="flex items-center bg-green-900/50 text-green-300 text-xs font-semibold px-2.5 py-1 rounded-full uppercase font-mono">Product</span>
+                    </div>
+                    <p class="text-white font-bold mt-3">Obsession du naming</p>
+                    <p class="text-white mt-2 text-sm">Six semaines à chercher le nom parfait et le logo idéal. Nous lançons avec un nom correct, nous optimisons quand ça marche.</p>
+                </div>
+                <div class="error-card border border-gray-700/50 rounded-lg p-6 flex-col bg-gray-900/30 hidden">
+                    <div class="flex justify-between items-center">
+                        <p class="font-mono text-orange-500 text-sm">ERROR_011</p>
+                        <span class="flex items-center bg-green-900/50 text-green-300 text-xs font-semibold px-2.5 py-1 rounded-full uppercase font-mono">Product</span>
+                    </div>
+                    <p class="text-white font-bold mt-3">Syndrome de la solution parfaite</p>
+                    <p class="text-white mt-2 text-sm">"Il faut que ça marche pour tous les cas d'usage possibles." Nous visons 80% des besoins avec 20% de la complexité.</p>
+                </div>
+                <div class="error-card border border-gray-700/50 rounded-lg p-6 flex-col bg-gray-900/30 hidden">
+                    <div class="flex justify-between items-center">
+                        <p class="font-mono text-orange-500 text-sm">ERROR_012</p>
+                        <span class="flex items-center bg-green-900/50 text-green-300 text-xs font-semibold px-2.5 py-1 rounded-full uppercase font-mono">Product</span>
+                    </div>
+                    <p class="text-white font-bold mt-3">Feedback sélectif</p>
+                    <p class="text-white mt-2 text-sm">Ignorer les retours négatifs et ne retenir que les compliments. Nous cherchons activement les points de friction pour les corriger.</p>
+                </div>
+
+                <div class="error-card border border-gray-700/50 rounded-lg p-6 flex flex-col bg-gray-900/30 hidden">
+                  <div class="flex justify-between items-center">
+                      <p class="font-mono text-orange-500 text-sm">ERROR_013</p>
+                      <span class="flex items-center bg-purple-900/50 text-purple-300 text-xs font-semibold px-2.5 py-0.5 rounded-full uppercase font-mono">Business</span>
+                  </div>
+                  <p class="text-white font-bold mt-3">Paralysie par l'analyse</p>
+                  <p class="text-white mt-2 text-sm">Six mois de business plan, douze réunions par semaine, zéro validation terrain. Pendant ce temps, quelqu'un d'autre plante son drapeau sur votre territoire.</p>
+                </div>
+
+                <div class="error-card border border-gray-700/50 rounded-lg p-6 flex-col bg-gray-900/30 hidden">
+                    <div class="flex justify-between items-center">
+                        <p class="font-mono text-orange-500 text-sm">ERROR_014</p>
+                        <span class="flex items-center bg-purple-900/50 text-purple-300 text-xs font-semibold px-2.5 py-0.5 rounded-full uppercase font-mono">Business</span>
+                    </div>
+                    <p class="text-white font-bold mt-3">Métriques de vanité</p>
+                    <p class="text-white mt-2 text-sm">"Nous avons 10 000 visiteurs !" Combien payent ? Nous nous concentrons sur les métriques qui comptent : conversion, rétention, revenue.</p>
+                </div>
+                <div class="error-card border border-gray-700/50 rounded-lg p-6 flex-col bg-gray-900/30 hidden">
+                    <div class="flex justify-between items-center">
+                        <p class="font-mono text-orange-500 text-sm">ERROR_015</p>
+                        <span class="flex items-center bg-purple-900/50 text-purple-300 text-xs font-semibold px-2.5 py-0.5 rounded-full uppercase font-mono">Business</span>
+                    </div>
+                    <p class="text-white font-bold mt-3">Levée de fonds prématurée</p>
+                    <p class="text-white mt-2 text-sm">Chercher des investisseurs avant d'avoir des clients. Nous validons d'abord, nous levons ensuite.</p>
+                </div>
+                <div class="error-card border border-gray-700/50 rounded-lg p-6 flex-col bg-gray-900/30 hidden">
+                    <div class="flex justify-between items-center">
+                        <p class="font-mono text-orange-500 text-sm">ERROR_016</p>
+                        <span class="flex items-center bg-purple-900/50 text-purple-300 text-xs font-semibold px-2.5 py-0.5 rounded-full uppercase font-mono">Business</span>
+                    </div>
+                    <p class="text-white font-bold mt-3">Syndrome de l'expert</p>
+                    <p class="text-white mt-2 text-sm">"Je connais mon marché, pas besoin de tester." Même les experts se trompent. Nous laissons les clients décider.</p>
+                </div>
+                <div class="error-card border border-gray-700/50 rounded-lg p-6 flex-col bg-gray-900/30 hidden">
+                    <div class="flex justify-between items-center">
+                        <p class="font-mono text-orange-500 text-sm">ERROR_017</p>
+                        <span class="flex items-center bg-purple-900/50 text-purple-300 text-xs font-semibold px-2.5 py-0.5 rounded-full uppercase font-mono">Business</span>
+                    </div>
+                    <p class="text-white font-bold mt-3">Paralysie juridique</p>
+                    <p class="text-white mt-2 text-sm">Trois mois chez l'avocat avant la première ligne de code. Nous protégeons ce qui a de la valeur, pas les hypothèses.</p>
+                </div>
+                <div class="error-card border border-gray-700/50 rounded-lg p-6 flex-col bg-gray-900/30 hidden">
+                    <div class="flex justify-between items-center">
+                        <p class="font-mono text-orange-500 text-sm">ERROR_018</p>
+                        <span class="flex items-center bg-purple-900/50 text-purple-300 text-xs font-semibold px-2.5 py-0.5 rounded-full uppercase font-mono">Business</span>
+                    </div>
+                    <p class="text-white font-bold mt-3">Réunionite aiguë</p>
+                    <p class="text-white mt-2 text-sm">Quinze personnes en réunion pour décider de la couleur d'un bouton. Nous privilégions l'action aux comités de décision.</p>
+                </div>
+                <div class="error-card border border-gray-700/50 rounded-lg p-6 flex-col bg-gray-900/30 hidden">
+                    <div class="flex justify-between items-center">
+                        <p class="font-mono text-orange-500 text-sm">ERROR_019</p>
+                        <span class="flex items-center bg-purple-900/50 text-purple-300 text-xs font-semibold px-2.5 py-0.5 rounded-full uppercase font-mono">Business</span>
+                    </div>
+                    <p class="text-white font-bold mt-3">Syndrome du pitch deck</p>
+                    <p class="text-white mt-2 text-sm">Cinquante slides pour expliquer une idée simple. Si vous ne pouvez pas l'expliquer en 2 minutes, c'est trop complexe.</p>
+                </div>
+                <div class="error-card border border-gray-700/50 rounded-lg p-6 flex flex-col bg-gray-900/30 hidden">
+                  <div class="flex justify-between items-center">
+                      <p class="font-mono text-orange-500 text-sm">ERROR_020</p>
+                      <span class="flex items-center bg-pink-900/50 text-pink-300 text-xs font-semibold px-2.5 py-0.5 rounded-full uppercase font-mono">Marketing</span>
+                  </div>
+                  <p class="text-white font-bold mt-3">Procrastination par recherche</p>
+                  <p class="text-white mt-2 text-sm">"Il faut encore étudier le marché." Après le 50ème rapport d'analyse, il est temps de tester avec de vrais clients.</p>
+                </div>
+                <div class="error-card border border-gray-700/50 rounded-lg p-6 flex-col bg-gray-900/30 hidden">
+                    <div class="flex justify-between items-center">
+                        <p class="font-mono text-orange-500 text-sm">ERROR_021</p>
+                        <span class="flex items-center bg-pink-900/50 text-pink-300 text-xs font-semibold px-2.5 py-0.5 rounded-full uppercase font-mono">Marketing</span>
+                    </div>
+                    <p class="text-white font-bold mt-3">Obsession de la concurrence</p>
+                    <p class="text-white mt-2 text-sm">Passer plus de temps à analyser les concurrents qu'à parler aux clients. Nous nous concentrons sur votre valeur unique.</p>
+                </div>
+                <div class="error-card border border-gray-700/50 rounded-lg p-6 flex-col bg-gray-900/30 hidden">
+                    <div class="flex justify-between items-center">
+                        <p class="font-mono text-orange-500 text-sm">ERROR_022</p>
+                        <span class="flex items-center bg-pink-900/50 text-pink-300 text-xs font-semibold px-2.5 py-0.5 rounded-full uppercase font-mono">Marketing</span>
+                    </div>
+                    <p class="text-white font-bold mt-3">Syndrome du lancement parfait</p>
+                    <p class="text-white mt-2 text-sm">Attendre d'avoir la stratégie marketing parfaite avant de commencer. Nous testons les messages avec de vrais prospects.</p>
+                </div>
+                <div class="error-card border border-gray-700/50 rounded-lg p-6 flex-col bg-gray-900/30 hidden">
+                    <div class="flex justify-between items-center">
+                        <p class="font-mono text-orange-500 text-sm">ERROR_023</p>
+                        <span class="flex items-center bg-pink-900/50 text-pink-300 text-xs font-semibold px-2.5 py-0.5 rounded-full uppercase font-mono">Marketing</span>
+                    </div>
+                    <p class="text-white font-bold mt-3">Pivot permanent</p>
+                    <p class="text-white mt-2 text-sm">Chaque feedback devient un changement de direction radical. Nous distinguons les ajustements tactiques des virages stratégiques.</p>
+                </div>
+                <div class="error-card border border-gray-700/50 rounded-lg p-6 flex-col bg-gray-900/30 hidden">
+                    <div class="flex justify-between items-center">
+                        <p class="font-mono text-orange-500 text-sm">ERROR_024</p>
+                        <span class="flex items-center bg-pink-900/50 text-pink-300 text-xs font-semibold px-2.5 py-0.5 rounded-full uppercase font-mono">Marketing</span>
+                    </div>
+                    <p class="text-white font-bold mt-3">Paralysie par l'écosystème marketing</p>
+                    <p class="text-white mt-2 text-sm">Attendre d'avoir tous les outils, toutes les intégrations, toute la stack parfaite. Nous commençons simple, nous sophistiquons en route.</p>
+                </div>
+                <div class="error-card border border-gray-700/50 rounded-lg p-6 flex-col bg-gray-900/30 hidden">
+                    <div class="flex justify-between items-center">
+                        <p class="font-mono text-orange-500 text-sm">ERROR_025</p>
+                        <span class="flex items-center bg-pink-900/50 text-pink-300 text-xs font-semibold px-2.5 py-0.5 rounded-full uppercase font-mono">Marketing</span>
+                    </div>
+                    <p class="text-white font-bold mt-3">Syndrome du fondateur unique</p>
+                    <p class="text-white mt-2 text-sm">Tout le marketing passe par une seule personne qui devient le goulot d'étranglement. Nous structurons pour l'autonomie d'équipe.</p>
+                </div>
+            </div>
+            <div class="flex justify-center mt-12">
+                <button id="see-more-btn" see-more-btn data-target="#error-grid" data-see-less-button="#see-less-errors-btn" class="text-white hover:underline underline-offset-8 font-bold py-3 px-6 rounded-sm uppercase tracking-wider">
+                    Un peu de curiosité morbide ? 😬
+                </button>
+
+                <button id="see-less-errors-btn" see-less-btn data-target="#error-grid" data-scroll-up-target="#diagnostic" data-see-more-button="#see-more-btn" class="text-white hover:underline underline-offset-8 font-bold py-3 px-6 rounded-sm uppercase tracking-wider hidden">
+                  J'en ai assez lu 🙈
+                </button>
+            </div>
+        </section>
+
+        <!-- Section Équipe d'Exploration -->
+        <section class="py-24">
+          <h2 class="text-4xl font-bold text-white leading-tight">L'équipe d'experts qui s'assure d'atteindre les bons objectifs.</h2>
+          <div class="flex flex-col mt-4">
+            <p class="text-lg text-white">4 spécialistes entrepreneurs. 8 semaines.</p>
+            <p class="text-lg text-white">Une idée qui passe au stade MVP en trouvant son premier orbite marché.</p>
+          </div>
+          <div class="grid md:grid-cols-2 gap-16 items-start mt-12">
+            <div class="space-y-8">
+              <div>
+                  <p class="font-mono text-orange-500 text-sm">01 - TECH NAVIGATOR</p>
+                  <section class="mt-4 space-y-2">
+                    <ul class="flex flex-wrap gap-2">
+                      <li>
+                        <a href="https://v0.dev/" target="_blank">
+                          <img src="assets/images/experts-tools/v0.png" alt="v0.dev" class="size-6">
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://www.lovable.com/" target="_blank">
+                          <img src="assets/images/experts-tools/lovable.png" alt="Lovable" class="size-6">
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://supabase.com/" target="_blank">
+                          <img src="assets/images/experts-tools/supabase.png" alt="Supabase" class="size-6">
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://www.rails.com/" target="_blank">
+                          <img src="assets/images/experts-tools/rails.png" alt="Rails" class="size-6">
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://www.postgresql.org/" target="_blank">
+                          <img src="assets/images/experts-tools/postgresql.png" alt="PostgreSQL" class="size-6">
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://react.dev/" target="_blank">
+                          <img src="assets/images/experts-tools/react.png" alt="React" class="size-6">
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://reactnative.dev/" target="_blank">
+                          <img src="assets/images/experts-tools/react-native.png" alt="React Native" class="size-6">
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://expo.dev/" target="_blank">
+                          <img src="assets/images/experts-tools/expo.jpg" alt="Expo" class="size-6">
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://tailwindcss.com/" target="_blank">
+                          <img src="assets/images/experts-tools/tailwind.jpg" alt="TailwindCSS" class="size-6">
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://clever-cloud.com/" target="_blank">
+                          <img src="assets/images/experts-tools/clevercloud.png" alt="Clever Cloud" class="size-6">
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://scalingo.com/" target="_blank">
+                          <img src="assets/images/experts-tools/scalingo.jpeg" alt="Scalingo" class="size-6">
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://aws.amazon.com/" target="_blank">
+                          <img src="assets/images/experts-tools/aws.jpg" alt="AWS" class="size-6">
+                        </a>
+                      </li>
+                    </ul>
+                  </section>
+                  <p class="text-white mt-2">Développeur senior qui code avec précision et vélocité. Systèmes éprouvés, pas de débats technologiques stériles. Nous déployons efficacement, nous optimisons en cours de vol en fonction des retours clients.</p>
+              </div>
+              <div>
+                  <p class="font-mono text-orange-500 text-sm">02 - PRODUCT EXPLORER</p>
+                  <section class="mt-4 space-y-2">
+                    <ul class="flex flex-wrap gap-2">
+                      <li>
+                        <a href="https://www.figma.com/" target="_blank">
+                          <img src="assets/images/experts-tools/figma.jpg" alt="v0.dev" class="size-6">
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://www.magicpatterns.com/" target="_blank">
+                          <img src="assets/images/experts-tools/magicpatterns.jpg" alt="Magic Patterns" class="size-6">
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://uxpilot.ai/" target="_blank">
+                          <img src="assets/images/experts-tools/uxpilot.jpeg" alt="UX Pilot" class="size-6">
+                        </a>
+                      </li>
+                    </ul>
+                  </section>
+                  <p class="text-white mt-2">Designer UX/UI qui cartographie votre idée avec précision. Identifie les 3 fonctionnalités qui comptent vraiment pour l'exploration. Le reste, c'est pour après la preuve marché.</p>
+              </div>
+              <div>
+                  <p class="font-mono text-orange-500 text-sm">03 - BUSINESS STRATEGIST</p>
+                  <p class="text-white mt-2">Définit les coordonnées qui déterminent le succès. Fini les métriques de vanité. Conversion, rétention, revenue. Point de navigation final.<br><em class="text-orange-500 not-italic">Analytics, KPIs, Strategy</em></p>
+              </div>
+              <div>
+                  <p class="font-mono text-orange-500 text-sm">04 - MARKET SCOUT</p>
+                  <p class="text-white mt-2">Expert en reconnaissance marché qui transforme les prospects en clients dès maintenant. Exploration terrain, tests réels, feedback marché direct et constructif. Nous ne testons pas, nous vendons.<br><em class="text-orange-500 not-italic">Cold Outreach, Sales, Market Testing</em></p>
+              </div>
+            </div>
+            <div class="bg-gray-900/50 border border-gray-700/50 rounded-lg shadow-lg">
+                <div class="flex items-center px-4 py-3 border-b border-gray-700/50">
+                  <div class="flex space-x-2">
+                    <span class="w-3 h-3 bg-red-500 rounded-full"></span>
+                    <span class="w-3 h-3 bg-yellow-500 rounded-full"></span>
+                    <span class="w-3 h-3 bg-green-500 rounded-full"></span>
+                  </div>
+                </div>
+                <div class="p-6 font-mono text-sm text-left">
+<pre><code><span class="text-gray-500">// Launchpad Mission Protocol</span>
+<span class="text-purple-400">const</span> mission = <span class="text-blue-400">new</span> <span class="text-green-400">Launchpad</span>({
+  <span class="text-red-400">timeline</span>: <span class="text-yellow-400">'8 weeks'</span>,
+  <span class="text-red-400">crew</span>: [<span class="text-yellow-400">'tech'</span>, <span class="text-yellow-400">'product'</span>, <span class="text-yellow-400">'business'</span>, <span class="text-yellow-400">'market'</span>],
+  <span class="text-red-400">navigation</span>: <span class="text-yellow-400">'Proven systems'</span>,
+  <span class="text-red-400">market_validation</span>: <span class="text-yellow-400">'Real customers'</span>
+});
+
+mission.<span class="text-blue-400">launch</span>().<span class="text-blue-400">then</span>(result => {
+  <span class="text-gray-500">// Market-validated MVP with paying customers</span>
+  console.<span class="text-blue-400">log</span>(<span class="text-yellow-400">"Mission accomplished"</span>);
+});
+</code></pre>
+                </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Section Pricing -->
+        <section class="py-24">
+          <h2 class="text-4xl font-bold text-white text-center uppercase">Choisissez votre mission</h2>
+          <p class="text-lg text-white mt-4 text-center">Deux possibilités, pour s'adapter à la progression de votre projet.</p>
+          <div class="grid md:grid-cols-2 gap-8 mx-auto mt-16">
+              <!-- Proof Pack -->
+              <div class="border border-white rounded-lg p-8 flex flex-col">
+                  <div class="flex items-center justify-between">
+                    <h3 class="mt-4 text-3xl uppercase tracking-wider text-white font-bold">Market proof pack</h3>
+                    <p class="relative flex items-center justify-center bg-orange-500 text-white text-sm font-semibold py-2 px-3.5 rounded-full leading-none font-mono">9900€</p>
+                  </div>
+                  <p class="text-white mt-2">Mission validation marché</p>
+                  <ul class="space-y-2 mt-8 text-white flex-grow">
+                      <li class="flex items-center"><span class="text-orange-500 mr-3">✓</span>20 jours hommes</li>
+                      <li class="flex items-center"><span class="text-orange-500 mr-3">✓</span>8 semaines</li>
+                      <li class="flex items-center"><span class="text-orange-500 mr-3">✓</span>MVP fonctionnel & déployé en 8 semaines</li>
+                      <li class="flex items-center"><span class="text-orange-500 mr-3">✓</span>Branding + LP minimaliste pour positionner l'idée en ligne</li>
+                      <li class="flex items-center"><span class="text-orange-500 mr-3">✓</span>Confrontation marché avec prospects réels</li>
+                  </ul>
+                  <a href="#" class="mt-8 block text-center border border-white text-white hover:border-orange-500 hover:bg-orange-500 hover:text-white font-bold py-3 px-6 rounded-sm uppercase tracking-wider">Je veux tester mon idée</a>
+                  <a href="#" class="mt-2 block text-center text-white hover:underline underline-offset-8 font-bold py-3 px-6 rounded-sm">Découvrir le process en détails</a>
+              </div>
+              <!-- Product-Market Fit Pack -->
+              <div class="border-2 border-white rounded-lg p-8 flex flex-col relative">
+                  <div class="flex items-center justify-between">
+                    <h3 class="mt-4 text-3xl uppercase tracking-wider text-white font-bold">Market fit pack</h3>
+                    <p class="relative flex items-center justify-center bg-orange-500 text-white text-sm font-semibold py-2 px-3.5 rounded-full leading-none font-mono">8900€ / mois</p>
+                  </div>
+                  <p class="text-white mt-2">Mission vers le product-market fit</p>
+                  <ul class="space-y-2 mt-8 text-white flex-grow">
+                      <li class="flex items-center"><span class="text-orange-500 mr-3">✓</span>Jusqu'à 20 jours hommes / mois</li>
+                      <li class="flex items-center"><span class="text-orange-500 mr-3">✓</span>4 à 6 mois maximum, sans engagement</li>
+                      <li class="flex items-center"><span class="text-orange-500 mr-3">✓</span>v1 produit + évolutions face au retours marché</li>
+                      <li class="flex items-center"><span class="text-orange-500 mr-3">✓</span>Première proposition de valeur en place</li>
+                      <li class="flex items-center"><span class="text-orange-500 mr-3">✓</span>Messaging marketing & processus commercial structurés</li>
+                  </ul>
+                  <a href="#" class="mt-8 block text-center border border-white text-white hover:border-orange-500 hover:bg-orange-500 hover:text-white font-bold py-3 px-6 rounded-sm uppercase tracking-wider">Je veux capturer mon premier marché</a>
+                  <a href="#" class="mt-2 block text-center text-white hover:underline underline-offset-8 font-bold py-3 px-6 rounded-sm">Découvrir le process en détails</a>
+              </div>
+          </div>
+        </section>
+
+        <section class="py-24">
+          <h2 class="text-4xl font-bold text-white text-center uppercase">Un alignement total avec vos objectifs</h2>
+          <div class="grid md:grid-cols-2 gap-4">
+            <div class="mt-12 bg-gray-900/50 rounded-lg p-12 flex flex-col items-center space-y-4">
+              <h6 class="text-white font-bold uppercase tracking-wider">Engagements</h6>
+              <ul class="text-white mt-2 text-left">
+                <li>Le MVP n'est pas livré dans les temps 👉 <span class="text-orange-500 font-bold">On vous rembourse 10%.</span></li>
+                <li>Les KPIs ne sont atteintes 👉 <span class="text-orange-500 font-bold">On vous rembourse +10%.</span></li>
+              </ul>
+            </div>
+
+            <div class="mt-12 bg-gray-900/50 rounded-lg p-12 flex flex-col items-center space-y-4">
+              <h6 class="text-white font-bold uppercase tracking-wider">Contreparties en cas de succès</h6>
+              <ul class="text-white mt-2 text-left">
+                <li>? 👉 <span class="text-orange-500 font-bold">On prend 10% de bonus.</span></li>
+                <li>Les KPIs sont dépassées 👉 <span class="text-orange-500 font-bold">On prend 10% de bonus.</span></li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section class="py-24">
+          <h2 class="text-4xl font-bold text-white text-center uppercase">Plus d'ambitions que de cash à investir ?</h2>
+          <div class="grid md:grid-cols-2 gap-4 mt-8">
+            <div class="bg-gray-900/50 rounded-lg p-12 flex flex-col items-center space-y-4">
+              <h6 class="text-white font-bold uppercase tracking-wider">Vous récupérez une partie de vos investissements</h6>
+              <p class="text-white mt-2 text-left">Grâce à notre agrément CII, vous bénéficiez d'un remboursement sous forme de crédit d'impôt à hauteur de 20% de vos investissements avec nous sur votre idée.</p>
+              <a href="#" class="text-white hover:underline underline-offset-8 font-bold py-3 px-6 rounded-sm">En savoir plus</a>
+            </div>
+
+            <div class="bg-gray-900/50 rounded-lg p-12 flex flex-col items-center space-y-4">
+              <h6 class="text-white font-bold uppercase tracking-wider">Nous travaillons avec des experts en financement</h6>
+              <p class="text-white mt-2 text-left">Nos partenaires vous accompagnent dans la recherche et l'obtention de financements pour lancer votre projet (subvention, prêt d'honneur & prêt bancaire).</p>
+              <a href="#" class="text-white hover:underline underline-offset-8 font-bold py-3 px-6 rounded-sm">En savoir plus</a>
+            </div>
+          </div>
+
+          <div class="mt-12 space-y-4">
+            <h2 class="text-2xl font-bold text-white text-center uppercase">Modèle startup studio</h2>
+            <div class="bg-gray-900/50 rounded-lg p-12 text-center mx-auto space-y-12">
+              <div>
+                <p class="text-lg text-white mt-4 max-w-2xl mx-auto">Nous pouvons également collaborer avec vous comme un startup studio, en offrant notre expertise en échange d'incentives long-terme.</p>
+                <p class="text-lg text-orange-500 font-bold mt-4">Pas de cash à investir pour vous.</p>
+                <p class="text-lg text-white mt-4">Notre contrepartie : prise de participation + part des revenus générés par <span class="text-orange-500 font-bold">notre startup</span>.</p>
+              </div>
+              <a href="/contact" class="inline-block text-center bg-orange-500 text-white hover:bg-gray-600 text-white font-bold py-3 px-6 rounded-sm uppercase tracking-wider">Je prends contact pour en savoir plus</a>
+            </div>
+          </div>
+        </section>
+
+      <!-- Section CTA Final -->
+      <section class="py-24 text-center space-y-6">
+        <h2 class="text-5xl font-bold text-white">Prêt à vous lancer ?</h2>
+
+        <div class="space-y-2">
+          <p class="text-xl text-white">Vos concurrents n'attendent pas.</p>
+          <p class="text-xl text-white">Nous non plus.</p>
         </div>
 
-        <section class="statistics-section py-24">
-            <h2 class="text-center text-3xl font-bold mb-2">Les résultats de nos explorations</h2>
-            <div class="w-24 h-1 bg-red-500 mx-auto mb-12"></div>
-            <div class="grid grid-cols-2 md:grid-cols-3 gap-8 text-center">
-                <div>
-                    <p class="text-5xl font-bold">N</p>
-                    <p class="text-gray-400 mt-2">MVP lancés</p>
-                </div>
-                <div>
-                    <p class="text-5xl font-bold">72%</p>
-                    <p class="text-gray-400 mt-2">des idées validées sur le marché</p>
-                </div>
-                <div>
-                    <p class="text-5xl font-bold">N</p>
-                    <p class="text-gray-400 mt-2">startups lancées</p>
-                </div>
-            </div>
-        </section>
-
-        <section class="diagnostic-section py-24 text-center">
-            <h2 class="text-3xl md:text-4xl font-bold">VOTRE IDÉE A DU POTENTIEL.<br>VOTRE MÉTHODE, BEAUCOUP MOINS.</h2>
-            <p class="text-white mt-4 max-w-3xl mx-auto">18 mois pour un MVP ? Vos concurrents ont déjà exploré et conquis le territoire.</p>
-            <div class="grid md:grid-cols-3 gap-8 mt-12 text-left">
-                <div class="border border-red-500/50 rounded-lg p-6">
-                    <p class="text-red-500 font-mono text-lg">ERROR_001</p>
-                    <h3 class="text-xl font-bold mt-2">Trop de préparation, pas assez d'action</h3>
-                    <p class="text-white mt-4">Six mois de cartographie, douze réunions par semaine, zéro exploration terrain.<br><br>Pendant ce temps, quelqu'un d'autre plante son drapeau sur votre territoire.</p>
-                </div>
-                <div class="border border-red-500/50 rounded-lg p-6">
-                    <p class="text-red-500 font-mono text-lg">ERROR_002</p>
-                    <h3 class="text-xl font-bold mt-2">Le perfectionnisme ? Pas pour les entrepreneurs qui se lancent</h3>
-                    <p class="text-white mt-4">"Il faut que ce soit parfait avant de décoller."<br><br>Spoiler : même Apollo 11 a eu des imprévus. Nous lançons maintenant, nous ajustons en vol.</p>
-                </div>
-                <div class="border border-red-500/50 rounded-lg p-6">
-                    <p class="text-red-500 font-mono text-lg">ERROR_003</p>
-                    <h3 class="text-xl font-bold mt-2">Le feature creep, la mort de votre idée</h3>
-                    <p class="text-white mt-4">Votre MVP doit-il vraiment déployer les 18 fonctionnalités que vous avez en tête ?<br><br>Spoiler #2 : il en faut 3 maximum pour valider votre hypothèse marché principale.</p>
-                </div>
-            </div>
-        </section>
-
-        <section class="crew-section py-24">
-            <div class="grid md:grid-cols-2 gap-16 items-center">
-                <div class="text-left">
-                    <h2 class="text-3xl md:text-4xl font-bold mb-4">NOTRE ÉQUIPAGE D'EXPERTS</h2>
-                    <p class="text-gray-400 mb-12">4 spécialistes d'élite. 6 semaines. 1 MVP qui trouve son orbite.</p>
-
-                    <div class="space-y-8">
-                        <div>
-                            <p class="font-mono text-red-500">01 - TECH NAVIGATOR</p>
-                            <p class="text-gray-400 mt-2">Développeur senior qui code avec précision et vélocité. Systèmes éprouvés, pas de débats technologiques stériles.</p>
-                        </div>
-                        <div>
-                            <p class="font-mono text-red-500">02 - PRODUCT EXPLORER</p>
-                            <p class="text-gray-400 mt-2">Designer UX/UI qui cartographie votre idée avec précision. Identifie les 3 fonctionnalités qui comptent vraiment.</p>
-                        </div>
-                        <div>
-                            <p class="font-mono text-red-500">03 - BUSINESS STRATEGIST</p>
-                            <p class="text-gray-400 mt-2">Définit les coordonnées qui déterminent le succès. Fini les métriques de vanité.</p>
-                        </div>
-                        <div>
-                            <p class="font-mono text-red-500">04 - MARKET SCOUT</p>
-                            <p class="text-gray-400 mt-2">Expert en reconnaissance marché qui transforme les prospects en clients dès maintenant.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="bg-gray-900/50 border border-gray-700 rounded-lg p-4 font-mono text-sm text-green-400">
-                    <div class="flex items-center space-x-2 mb-4">
-                        <span class="w-3 h-3 bg-red-500 rounded-full"></span>
-                        <span class="w-3 h-3 bg-yellow-500 rounded-full"></span>
-                        <span class="w-3 h-3 bg-green-500 rounded-full"></span>
-                    </div>
-                    <p><span class="text-purple-400">const</span> mission = <span class="text-yellow-400">new</span> StrikeForce({</p>
-                    <p class="pl-4">timeline: <span class="text-green-400">'6_weeks'</span>,</p>
-                    <p class="pl-4">crew: [<span class="text-green-400">'tech'</span>, <span class="text-green-400">'product'</span>, <span class="text-green-400">'business'</span>, <span class="text-green-400">'market'</span>],</p>
-                    <p class="pl-4">navigation: <span class="text-green-400">'proven_systems'</span>,</p>
-                    <p class="pl-4">market_validation: <span class="text-green-400">'real_customers'</span></p>
-                    <p>});</p>
-                    <p class="mt-4">mission.launch().then(result => {</p>
-                    <p class="pl-4">console.log(<span class="text-green-400">"Mission accomplished"</span>);</p>
-                    <p>});</p>
-                </div>
-            </div>
-        </section>
-
-        <section class="pricing-section py-24 text-center">
-            <h2 class="text-3xl md:text-4xl font-bold">CHOISISSEZ VOTRE MISSION</h2>
-            <p class="text-gray-400 mt-4">Deux types d'exploration. Résultats garantis.</p>
-            <div class="grid md:grid-cols-2 gap-8 mt-12 text-left max-w-4xl mx-auto">
-                <div class="border border-gray-700 rounded-lg p-8">
-                    <h3 class="text-2xl font-bold">PROOF PACK</h3>
-                    <p class="text-4xl font-bold my-4">€9K</p>
-                    <p class="text-gray-400 mb-6">Première exploration de marché</p>
-                    <ul class="space-y-3 text-gray-300">
-                        <li class="flex items-center"><span class="text-green-500 mr-3">✓</span> 20 jours hommes d'expertise</li>
-                        <li class="flex items-center"><span class="text-green-500 mr-3">✓</span> Équipage de 4 experts</li>
-                        <li class="flex items-center"><span class="text-green-500 mr-3">✓</span> MVP fonctionnel en 6 semaines</li>
-                        <li class="flex items-center"><span class="text-green-500 mr-3">✓</span> Tests avec prospects réels</li>
-                        <li class="flex items-center"><span class="text-green-500 mr-3">✓</span> Première validation marché</li>
-                        <li class="flex items-center"><span class="text-green-500 mr-3">✓</span> <strong>Stack rapide</strong>: v0/Lovable (MVP jetable)</li>
-                    </ul>
-                    <a href="#" class="mt-8 inline-block bg-red-500 text-white w-full text-center py-3 rounded-full font-bold hover:bg-red-600">LAUNCH NOW</a>
-                </div>
-                <div class="border border-red-500 rounded-lg p-8 relative">
-                     <span class="absolute top-0 right-8 -mt-4 bg-red-500 text-white text-xs font-bold px-3 py-1 rounded-full">RECOMMANDÉ</span>
-                    <h3 class="text-2xl font-bold">PRODUCT-MARKET FIT PACK</h3>
-                    <p class="text-4xl font-bold my-4">À partir de €50K</p>
-                    <p class="text-gray-400 mb-6">Mission complète vers le product-market fit</p>
-                    <ul class="space-y-3 text-gray-300">
-                        <li class="flex items-center"><span class="text-green-500 mr-3">✓</span> 100+ jours hommes sur 4 mois</li>
-                        <li class="flex items-center"><span class="text-green-500 mr-3">✓</span> Produit v1 + évolutions marché</li>
-                        <li class="flex items-center"><span class="text-green-500 mr-3">✓</span> Structuration process business</li>
-                        <li class="flex items-center"><span class="text-green-500 mr-3">✓</span> Commercial et marketing structurés</li>
-                        <li class="flex items-center"><span class="text-green-500 mr-3">✓</span> Product-Market Fit validé</li>
-                        <li class="flex items-center"><span class="text-green-500 mr-3">✓</span> <strong>Stack évolutive</strong>: Rails + PostgreSQL</li>
-                    </ul>
-                    <a href="#" class="mt-8 inline-block bg-red-500 text-white w-full text-center py-3 rounded-full font-bold hover:bg-red-600">LAUNCH NOW</a>
-                </div>
-            </div>
-        </section>
-
-        <section class="timeline-section py-24">
-            <h2 class="text-3xl md:text-4xl font-bold text-center">PROOF PACK : 6 SEMAINES POUR VALIDER VOTRE MARCHÉ</h2>
-            <p class="text-gray-400 mt-4 text-center">Timeline détaillée de votre première exploration. Résultats garantis.</p>
-            <div class="mt-12 flex flex-col md:flex-row justify-center items-center gap-8">
-                <!-- W1 -->
-                <div class="text-center">
-                    <div class="bg-gray-800 border-2 border-red-500 rounded-full w-24 h-24 flex items-center justify-center">
-                        <p class="text-2xl font-bold">W1</p>
-                    </div>
-                    <p class="font-bold mt-4">MISSION<br>PLANNING</p>
-                </div>
-                <div class="w-16 h-1 bg-gray-700 hidden md:block"></div>
-                <!-- W2-3 -->
-                <div class="text-center">
-                    <div class="bg-gray-800 border-2 border-gray-600 rounded-full w-24 h-24 flex items-center justify-center">
-                        <p class="text-2xl font-bold">W2-3</p>
-                    </div>
-                    <p class="font-bold mt-4">CONSTRUCTION<br>& LANCEMENT</p>
-                </div>
-                <div class="w-16 h-1 bg-gray-700 hidden md:block"></div>
-                <!-- W4-6 -->
-                <div class="text-center">
-                    <div class="bg-gray-800 border-2 border-gray-600 rounded-full w-24 h-24 flex items-center justify-center">
-                        <p class="text-2xl font-bold">W4-6</p>
-                    </div>
-                    <p class="font-bold mt-4">EXPLORATION<br>MARCHÉ</p>
-                </div>
-            </div>
-            <!-- Detailed cards would go here, maybe for the process page -->
-        </section>
-
-        <section class="equity-section py-24 my-12 bg-gray-900/50 rounded-lg text-center">
-             <h2 class="text-3xl md:text-4xl font-bold">PLUS D'AMBITION QUE DE CASH ?</h2>
-             <p class="text-gray-400 mt-4">Modèle startup studio. Work for equity. 0 cash.</p>
-             <div class="mt-8">
-                 <a href="contact.html" class="text-red-500 font-bold border border-red-500 rounded-full px-8 py-3 hover:bg-red-500 hover:text-white">DISCUTER PARTENARIAT</a>
-             </div>
-             <p class="text-xs text-gray-500 mt-8">5% pour le Proof Pack | 10% pour le PMF Pack | 15% pour les 2 missions</p>
-        </section>
-
-        <section class="final-cta-section py-24 text-center">
-            <h2 class="text-4xl md:text-6xl font-bold">PRÊT À EXPLORER ?</h2>
-            <p class="text-gray-400 mt-4 text-xl">Le marché attend. Votre MVP aussi.</p>
-            <div class="mt-8">
-                 <a href="contact.html" class="bg-red-500 text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-red-600">LAUNCH NOW</a>
-            </div>
-        </section>
-
+        <a href="contact.html" class="inline-block bg-orange-500 hover:bg-orange-600 text-white font-bold py-4 px-8 rounded-sm uppercase text-base tracking-wider">Je prends contact</a>
+      </section>
     </main>
-    <footer class="container mx-auto px-4 py-12 mt-24 text-gray-400">
-        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
-            <div class="md:col-span-1">
-                <h3 class="text-xl font-bold text-white mb-4"><span class="text-red-500">⚡</span> STRIKE FORCE</h3>
-                <p class="text-sm">L'équipage d'experts qui transforme vos idées en MVP validés avec de vrais clients en 6 semaines maximum.</p>
+
+    <footer class="border-t border-gray-800 mt-24">
+        <div class="container mx-auto px-4 py-12">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div class="col-span-2 md:col-span-1">
+                    <div class="flex flex-col items-start gap-y-0.5">
+                      <a href="/" class="text-2xl font-bold text-white tracking-widest">
+                        <h3 class="text-xl font-bold text-white">LAUNCHPAD</h3>
+                      </a>
+                      <a href="https://www.stellaire.studio" target="_blank" class="text-sm font-bold text-white tracking-widest">
+                        stellaire.studio
+                      </a>
+                    </div>
+                    <p class="text-white mt-4 text-sm">L'équipage d'experts qui fait passer votre idée à la preuve de marché avec de vrais clients en 8 semaines.</p>
+                </div>
+                <div>
+                    <h4 class="font-bold text-white uppercase tracking-wider">Services</h4>
+                    <ul class="mt-4 space-y-2 text-sm">
+                        <li><a href="#" class="text-white hover:text-white">Market Proof Pack</a></li>
+                        <li><a href="#" class="text-white hover:text-white">Market Fit Pack</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold text-white uppercase tracking-wider">Entreprise</h4>
+                    <ul class="mt-4 space-y-2 text-sm">
+                        <li><a href="team.html" class="text-white hover:text-white">équipage</a></li>
+                        <li><a href="process.html" class="text-white hover:text-white">process</a></li>
+                        <li><a href="contact.html" class="text-white hover:text-white">cntact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold text-white uppercase tracking-wider">Contact</h4>
+                    <ul class="mt-4 space-y-2 text-sm text-white">
+                        <li>📞 +33 6 17 17 17 17</li>
+                        <li>✉️ hello@stellaire.studio</li>
+                    </ul>
+                </div>
             </div>
-            <div>
-                <h4 class="font-bold text-white mb-4">SERVICES</h4>
-                <ul class="space-y-2 text-sm">
-                    <li><a href="#" class="hover:text-white">Proof Pack</a></li>
-                    <li><a href="#" class="hover:text-white">Product-Market Fit Pack</a></li>
-                    <li><a href="#" class="hover:text-white">Market Validation</a></li>
-                    <li><a href="#" class="hover:text-white">Nos explorations</a></li>
-                </ul>
-            </div>
-            <div>
-                <h4 class="font-bold text-white mb-4">ENTREPRISE</h4>
-                <ul class="space-y-2 text-sm">
-                    <li><a href="team.html" class="hover:text-white">Notre équipage</a></li>
-                    <li><a href="process.html" class="hover:text-white">Notre process</a></li>
-                    <li><a href="contact.html" class="hover:text-white">Contact</a></li>
-                    <li><a href="#" class="hover:text-white">Success stories</a></li>
-                </ul>
-            </div>
-            <div>
-                <h4 class="font-bold text-white mb-4">CONTACT</h4>
-                <ul class="space-y-2 text-sm">
-                    <li><a href="tel:+33183646972" class="hover:text-white">📞 +33 1 83 64 69 72</a></li>
-                    <li><a href="mailto:strike@mvpforce.com" class="hover:text-white">✉️ strike@mvpforce.com</a></li>
-                    <li>Lun-Ven: 9h-19h</li>
-                </ul>
-            </div>
-        </div>
-        <div class="border-t border-gray-800 mt-8 pt-6 text-center text-sm">
-            <p>&copy; 2024 Strike Force MVP. Tous droits réservés.</p>
         </div>
     </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+          const seeMoreBtns = document.querySelectorAll('[see-more-btn]');
+          seeMoreBtns.forEach(btn => {
+            btn.addEventListener('click', function () {
+                const seeMoreBtnTarget = btn.getAttribute('data-target');
+                const seeLessBtnSelector = btn.getAttribute('data-see-less-button');
+
+                const seeLessBtn = document.querySelector(seeLessBtnSelector);
+
+                const target = document.querySelector(seeMoreBtnTarget);
+                const elementsToShow = target.querySelectorAll('.hidden');
+
+                elementsToShow.forEach(function (el) {
+                    el.classList.remove('hidden');
+                    el.setAttribute('see-more-shown', 'true');
+                });
+
+                btn.style.display = 'none';
+                seeLessBtn.style.display = 'block';
+            });
+          });
+
+          const seeLessBtns = document.querySelectorAll('[see-less-btn]');
+          seeLessBtns.forEach(btn => {
+            btn.addEventListener('click', function () {
+                const seeLessBtnTarget = btn.getAttribute('data-target');
+
+                const seeMoreBtnSelector = btn.getAttribute('data-see-more-button');
+                const seeMoreBtn = document.querySelector(seeMoreBtnSelector);
+
+                const target = document.querySelector(seeLessBtnTarget);
+                const elementsToHide = target.querySelectorAll('[see-more-shown]');
+
+                const scrollUpToSelector = btn.getAttribute('data-scroll-up-target');
+                const scrollUpTarget = document.querySelector(scrollUpToSelector);
+
+                scrollUpTarget.scrollIntoView({ behavior: 'smooth', block: 'start' });
+
+                setTimeout(() => {
+                  elementsToHide.forEach(function (el) {
+                    el.classList.add('hidden');
+                    el.removeAttribute('see-more-shown');
+
+                    btn.style.display = 'none';
+                    seeMoreBtn.style.display = 'block';
+                  });
+                }, 800);
+            });
+          });
+        });
+    </script>
 </body>
 </html>
